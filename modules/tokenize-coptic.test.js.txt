@@ -1,0 +1,127 @@
+import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
+import {
+  tokenizeCoptic, 
+  isCombiningOverline, 
+  isCopticWord,
+  Categorizer,
+  Tokenizer
+}from "./tokenize-coptic.js";
+
+// Deno.test("isPunctuation", () => {
+//   let punctuation = `ⲡⲉϫⲉ-ⲡϩⲗ̅ⲗⲟ ⲛⲁϥ ϫⲉ, "ⲧⲱⲟⲩⲛⲅ̅ ⲛ̅ⲅⲡⲱⲧ ⲛ̅ⲅⲧⲁϩⲟϥ."`
+//   let characters = punctuation.split("")
+//   let isPunctuation = characters.every(character => {
+//     return character.match(/\p{P}/gu)
+//   })
+//   assertEquals(isPunctuation, true)
+// })
+
+Deno.test("isCombiningOverline", () => {
+  let combiningOverline = `̅`
+  assertEquals(isCombiningOverline(combiningOverline), true)
+})
+
+Deno.test("Categorizer", () => {
+  let categorizations = {
+    " ": "white-space",
+    "\"": "punctuation",
+    ",": "punctuation",
+    ".": "punctuation",
+    "?": "punctuation",
+    "̅": "nonspacing-mark",
+    "Ϥ": "letter",
+    "ϥ": "letter",
+    "Ϫ": "letter",
+    "ϫ": "letter",
+    "Ⲁ": "letter",
+    "ⲁ": "letter"
+  }
+  let categorizer = new Categorizer(categorizations)
+
+  assertEquals([
+    [" ", "white-space",
+    ["\"", "punctuation"],
+    [",", "punctuation"],
+    [".", "punctuation"],
+    ["?", "punctuation"],
+    ["̅", "nonspacing-mark"],
+    ["Ϥ", "letter"],
+    ["ϥ", "letter"],
+    ["Ϫ", "letter"],
+    ["ϫ", "letter"],
+    ["Ⲁ", "letter"],
+    ["ⲁ", "letter"],
+  ].every(([character, category]) => categorizer
+    .categorize(character) == category), true)
+})
+
+Deno.test("isCopticWord", () => {
+  let copticWord = `ⲡⲉϫⲉ`
+  assertEquals(isCopticWord(copticWord), true)
+})
+
+
+Deno.test("isCopticWord with combining overline", () => {
+  let copticWordWithCombiningOverline = `ⲡϩⲗ̅ⲗⲟ`
+  assertEquals(isCopticWord(copticWordWithCombiningOverline), true)
+})
+
+Deno.test("classifyCharacters", () => {
+  let classifiedCharacters = [
+    {
+      "character": " ",
+      "category": "white-space"
+    },
+    {
+      "character": "\"",
+      "category": "punctuation"
+    },
+    {
+      "character": ",",
+      "category": "punctuation"
+    },
+    {
+      "character": ".",
+      "category": "punctuation"
+    },
+    {
+      "character": "?",
+      "category": "punctuation"
+    },
+    {
+      "character": "̅",
+      "category": "nonspacing-mark"
+    },
+    {
+      "character": "Ϥ",
+      "category": "letter"
+    },
+    {
+      "character": "ϥ",
+      "category": "letter"
+    },
+    {
+      "character": "Ϫ",
+      "category": "letter"
+    },
+    {
+      "character": "ϫ",
+      "category": "letter"
+    },
+    {
+      "character": "Ⲁ",
+      "category": "letter"
+    },
+    {
+      "character": "ⲁ",
+      "category": "letter"
+    }
+  ]
+})
+
+
+// Deno.test("tokenizeCoptic", () => {
+//   let coptic = `ⲡⲉϫⲉ-ⲡϩⲗ̅ⲗⲟ ⲛⲁϥ ϫⲉ, "ⲧⲱⲟⲩⲛⲅ̅ ⲛ̅ⲅⲡⲱⲧ ⲛ̅ⲅⲧⲁϩⲟϥ."`
+//   let tokens = tokenizeCoptic(coptic)
+//   assertEquals(tokens, ["ⲡⲉϫⲉ", "ⲡϩⲗ̅ⲗⲟ", "ⲛⲁϥ", "ϫⲉ", "ⲧⲱⲟⲩⲛⲅ̅", "ⲛ̅ⲅⲡⲱⲧ", "ⲛ̅ⲅⲧⲁϩⲟϥ"])
+// })

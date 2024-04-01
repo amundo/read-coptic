@@ -1,0 +1,6 @@
+{
+  "tasks": {
+    "download": "deno run --allow-net --allow-read --allow-write google-sheet-to-tsv.js 'https://docs.google.com/spreadsheets/d/1H1C8rnk1OQn6xh1BWI3xDwXOE8yEUMCKrHQ297k9b4o/edit#gid=553624726'",
+    "parse": "deno run --allow-read --allow-write parse-coptic-lexicon-tsv.js"
+  }
+}

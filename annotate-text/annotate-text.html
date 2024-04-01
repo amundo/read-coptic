@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>  
+  <title>annotate-text</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="annotate-text.css">
+
+</head>
+<body>
+
+    <annotate-text lexicon="../lexicon/SahidicGlossary-lexicon.json" text="../corpus/ap-1.cop.txt" ></annotate-text>  
+
+<script type="module">
+import {AnnotateText} from './AnnotateText.js'
+
+window.AnnotateText = document.querySelector('annotate-text')
+</script>
+
+</body>
+</html>

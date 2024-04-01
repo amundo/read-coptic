@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>tokenize-coptic test</title>
+  <link rel="icon" type="image/png" href="#">
+  <style>
+    html {
+      height: 100%;
+    }
+
+    body {
+      h1 {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: normal;
+      }
+
+      margin:1em;
+      display: grid;
+      grid-template-rows: auto 1fr 1fr;
+      height: 100svh;
+      row-gap: 1em;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>tokenize-coptic test</h1>
+
+  <textarea>ⲡⲉϫⲉ-ⲡϩⲗ̅ⲗⲟ ⲛⲁϥ ϫⲉ, "ⲧⲱⲟⲩⲛⲅ̅ ⲛ̅ⲅⲡⲱⲧ ⲛ̅ⲅⲧⲁϩⲟϥ."
+
+    </textarea>
+  <output>output here</output>
+
+  <script type="module">
+    import { tokenizeCoptic } from './tokenize-coptic.js'
+
+    let update = () => {
+      let plaintext = document.querySelector('textarea').value
+      let tokens = tokenizeCoptic(plaintext)
+      document.querySelector('output').textContent = JSON.stringify(tokens, null, 2)
+    }
+
+    update()
+  </script>
+</body>
+
+</html>

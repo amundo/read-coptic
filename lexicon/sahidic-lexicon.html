@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Sahidic Coptic Lexicon</title>
+  <link rel="icon" type="image/png" href="#">
+  <link rel="stylesheet" href="https://pathall.net/data-viewer/v2.0.0/data-viewer.css">
+  <style>
+    data-viewer {
+      table.array-of-objects {
+        position: relative;
+        th {
+          position: sticky;
+          top: 0; /* Don't forget this, required for the stickiness */
+        }
+      }
+    }
+  </style>
+</head>
+<body>
+<h1>Sahidic Coptic Lexicon</h1>
+
+<template>
+  
+</template>
+
+<data-viewer></data-viewer>
+
+<script type="module">
+import {DataViewer} from "https://pathall.net/data-viewer/v2.0.0/DataViewer.js"
+let response = await fetch('./SahidicGlossary-lexicon.json')
+let data = await response.json()
+// let entries = data.entries
+document.querySelector('data-viewer').data = data
+</script>
+</body>
+</html>

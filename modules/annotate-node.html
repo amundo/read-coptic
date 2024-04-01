@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>annotate-node</title>
+  <link rel="icon" type="image/png" href="#">
+  <link rel="stylesheet" href="https://glyphical.net/coptic/css/typography.css">
+
+<style>
+  .word {
+  display: inline-block;
+  position: relative;
+  line-height: 1.5;
+  margin-block:1em;
+  &.annotated {
+    cursor: pointer;
+    .form  {
+      text-decoration: underline;
+    }
+  }
+  .form {
+    /* border:1px solid gray; */
+    padding-inline: .2em;
+    font-family: Antinoou;
+  }
+  .definition {
+    color:gray;
+    position: absolute;
+    background: white;
+    z-index: 1;
+    border:1px solid;
+    max-height: 10em;
+    max-width: 20em;
+    xbackground-color: pink;
+    ;
+    overflow-y:scroll;
+    display: none;
+    bottom: 100%; /* Place it above the parent */
+    left: 50%; /* Start from the middle of the parent */
+    transform: translateX(-50%); /* Center it with respect to the parent */
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  &.annotated:hover .definition {
+    display: block;
+  }
+}
+
+</style>
+</head>
+<body>
+<h1>annotate-node</h1>
+
+<p id="content">
+  ⲛⲉ-ⲟⲩⲛ̅-ⲟⲩⲁ ϩⲛ̅ ⲕⲏⲙⲉ ⲉ-ⲟⲩⲛ̅ⲧⲁϥ ⲙ̅ⲙⲁⲩ ⲛ̅ ⲟⲩϣⲏⲣⲉ ⲉϥⲥⲏϭ. ⲁⲩⲱ ⲁϥⲉⲓⲛⲉ ⲙ̅ⲙⲟϥ, ⲁϥⲕⲁⲁϥ ϩⲛ̅ ⲧⲣⲓ ⲛ̅ ⲁⲡⲁ ⲙⲁⲕⲁⲣⲓⲟⲥ, ⲁⲩⲱ ⲁϥⲕⲁⲁϥ ⲉϥⲣⲓⲙⲉ ϩⲁϩⲧⲙ̅ ⲡⲣⲟ, ⲁϥⲃⲱⲕ ⲉ ⲡⲟⲩⲉ. ⲡϩⲗ̅ⲗⲟ ⲇⲉ ⲁϥϭⲱϣⲧ̅ ⲉⲃⲟⲗ, ⲁϥⲛⲁⲩ ⲉ ⲡⲕⲟⲩⲓ ⲛ̅ ϣⲏⲣⲉ ⲉϥⲣⲓⲙⲉ, ⲁⲩⲱ ⲡⲉϫⲁϥ ⲛⲁϥ ϫⲉ, "ⲛⲓⲙ ⲡⲉⲛⲧⲁϥⲛ̅ⲧⲕ̅ ⲉ ⲡⲉⲓⲙⲁ?" ⲛ̅ⲧⲟϥ ⲇⲉ ⲡⲉϫⲁϥ ϫⲉ, "ⲡⲁⲉⲓⲱⲧ ⲡⲉ. ⲁϥⲛ̅ⲧ, ⲁϥⲛⲟϫⲧ̅ ⲉⲃⲟⲗ, ⲁϥⲃⲱⲕ." ⲡⲉϫⲉ-ⲡϩⲗ̅ⲗⲟ ⲛⲁϥ ϫⲉ, "ⲧⲱⲟⲩⲛⲅ̅ ⲛ̅ⲅⲡⲱⲧ ⲛ̅ⲅⲧⲁϩⲟϥ." ⲁⲩⲱ ⲛ̅ ⲧⲉⲩⲛⲟⲩ ⲁϥⲟⲩϫⲁⲓ, ⲁϥⲧⲱⲟⲩⲛ, ⲁϥⲧⲁϩⲉ-ⲡⲉϥⲉⲓⲱⲧ, ⲁⲩⲱ ⲛ̅ ⲧⲉⲓϩⲉ ⲁⲩⲃⲱⲕ ⲉ ⲡⲉⲩⲏⲓ ⲉⲩⲣⲁϣⲉ.
+</p>
+
+<script type="module">
+import {annotateNode} from './annotate-node.js'
+
+let response = await fetch('../lexicon/SahidicGlossary-lexicon.json')
+let lexicon = await response.json()
+let words = lexicon.entries
+
+
+  const contentNode = document.querySelector('#content');
+  annotateNode(contentNode, lexicon);
+
+</script>
+</body>
+</html>

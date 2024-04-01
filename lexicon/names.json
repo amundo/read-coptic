@@ -1,0 +1,74 @@
+[
+  {
+    "before": "Ⲛⲟ",
+    "after": "id"
+  },
+  {
+    "before": "lemmaId",
+    "after": "lemmaId"
+  },
+  {
+    "before": "isLemma",
+    "after": "isLemma"
+  },
+  {
+    "before": "homonymId",
+    "after": "homonymId"
+  },
+  {
+    "before": "Deriv.",
+    "after": "form"
+  },
+  {
+    "before": "lemmaForm",
+    "after": "lemmaForm"
+  },
+  {
+    "before": "English",
+    "after": "definition"
+  },
+  {
+    "before": "Coptic Word",
+    "after": "lemma"
+  },
+  {
+    "before": "Gramm. Info.",
+    "after": "grammar"
+  },
+  {
+    "before": "Alt.  Spellings",
+    "after": "spellings"
+  },
+  {
+    "before": "F.  (n. & adj.)",
+    "after": "feminine"
+  },
+  {
+    "before": "Pl.",
+    "after": "plural"
+  },
+  {
+    "before": "(Status  nom.)",
+    "after": "nominativus"
+  },
+  {
+    "before": "(Status pronom.)",
+    "after": "pronominalis"
+  },
+  {
+    "before": "Qual.",
+    "after": "qualitative"
+  },
+  {
+    "before": "Notes",
+    "after": "notes"
+  },
+  {
+    "before": "Prepositions used",
+    "after": "prepositions"
+  },
+  {
+    "before": "Example Sentence",
+    "after": "examples"
+  }
+]

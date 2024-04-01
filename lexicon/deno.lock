@@ -1,0 +1,7 @@
+{
+  "version": "3",
+  "remote": {
+    "https://esm.sh/papaparse@5.4.1": "ec7973d9a752705e2ee8ca70119b00c2f86fd80fd82299ff0192f49c1df4e09e",
+    "https://esm.sh/v113/papaparse@5.4.1/deno/papaparse.mjs": "7f506fee3fd50c9bb1d41eb21189ce22176334c9bc1db6a4678f59e192424179"
+  }
+}
