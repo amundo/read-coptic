@@ -1,0 +1,5 @@
+{
+  "tasks": {
+    "build": "pandoc -f markdown -t html --css choose-wordclass-docs.css --template=template.html -o choose-wordclass-docs.html choose-wordclass-docs.md"
+  }
+}

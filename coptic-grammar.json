@@ -1,0 +1,103 @@
+{
+  "metadata": {
+    "name": "Sahidic Coptic"
+  },
+  "categories": [
+    {
+      "name": "person",
+      "values": [
+        {
+          "value": "first",
+          "symbol": "1"
+        },
+        {
+          "value": "second",
+          "symbol": "2"
+        },
+        {
+          "value": "third",
+          "symbol": "3"
+        }
+      ]
+    },
+    {
+      "name": "number",
+      "values": [
+        {
+          "value": "singular",
+          "symbol": "SG"
+        },
+        {
+          "value": "plural",
+          "symbol": "PL"
+        }
+      ]
+    },
+    {
+      "name": "gender",
+      "values": [
+        {
+          "value": "masculine",
+          "symbol": "MASC"
+        },
+        {
+          "value": "feminine",
+          "symbol": "FEM"
+        },
+        {
+          "value": "common",
+          "symbol": "COM"
+        }
+      ]
+    },
+    {
+      "name": "definiteness",
+      "values": [
+        {
+          "value": "definite",
+          "symbol": "DEF"
+        },
+        {
+          "value": "indefinite",
+          "symbol": "INDEF"
+        }
+      ]
+    }
+  ],
+  "wordclasses": [
+    {
+      "name": "pronoun",
+      "symbol": "PRON",
+      "categories": [
+        "gender",
+        "number",
+        "person"
+      ]
+    },
+    {
+      "name": "demonstrative",
+      "symbol": "DEM",
+      "categories": [
+        "gender",
+        "number",
+        "person"
+      ]
+    },
+    {
+      "name": "noun",
+      "symbol": "N",
+      "categories": [
+        "gender",
+        "number"
+      ]
+    },
+    {
+      "name": "verb",
+      "symbol": "V",
+      "categories": [
+        "number",
+        "person"
+      ]
+    }
+  ]
+}

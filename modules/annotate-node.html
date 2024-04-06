@@ -8,6 +8,35 @@
   <link rel="stylesheet" href="https://glyphical.net/coptic/css/typography.css">
 
 <style>
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin:0;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-image: url('https://i0.wp.com/www.raymondibrahim.com/wp-content/uploads/2018/01/asd.jpg');
+  background-size: cover;
+  backdrop-filter: grayscale(.4) blur(8px) contrast(1.4);
+  background-position: fixed;
+  padding: 1em;
+  display: grid;
+}
+
+main {
+  background: white;
+  border-radius: 1em;
+  padding: 1em;
+  opacity: .85;
+  max-width: 50%;
+  max-height: 80%;
+  overflow-y: scroll;
+}
+
   .word {
   display: inline-block;
   position: relative;
@@ -48,15 +77,34 @@
     display: block;
   }
 }
-
+footer {
+  background:hsl(0, 0%, 20%);
+  color: white;
+  a {
+    color:inherit;
+  }
+  font-size: x-small;
+  padding:1em;
+  font-family: Antinoou;
+}
 </style>
 </head>
 <body>
-<h1>annotate-node</h1>
 
-<p id="content">
-  ⲛⲉ-ⲟⲩⲛ̅-ⲟⲩⲁ ϩⲛ̅ ⲕⲏⲙⲉ ⲉ-ⲟⲩⲛ̅ⲧⲁϥ ⲙ̅ⲙⲁⲩ ⲛ̅ ⲟⲩϣⲏⲣⲉ ⲉϥⲥⲏϭ. ⲁⲩⲱ ⲁϥⲉⲓⲛⲉ ⲙ̅ⲙⲟϥ, ⲁϥⲕⲁⲁϥ ϩⲛ̅ ⲧⲣⲓ ⲛ̅ ⲁⲡⲁ ⲙⲁⲕⲁⲣⲓⲟⲥ, ⲁⲩⲱ ⲁϥⲕⲁⲁϥ ⲉϥⲣⲓⲙⲉ ϩⲁϩⲧⲙ̅ ⲡⲣⲟ, ⲁϥⲃⲱⲕ ⲉ ⲡⲟⲩⲉ. ⲡϩⲗ̅ⲗⲟ ⲇⲉ ⲁϥϭⲱϣⲧ̅ ⲉⲃⲟⲗ, ⲁϥⲛⲁⲩ ⲉ ⲡⲕⲟⲩⲓ ⲛ̅ ϣⲏⲣⲉ ⲉϥⲣⲓⲙⲉ, ⲁⲩⲱ ⲡⲉϫⲁϥ ⲛⲁϥ ϫⲉ, "ⲛⲓⲙ ⲡⲉⲛⲧⲁϥⲛ̅ⲧⲕ̅ ⲉ ⲡⲉⲓⲙⲁ?" ⲛ̅ⲧⲟϥ ⲇⲉ ⲡⲉϫⲁϥ ϫⲉ, "ⲡⲁⲉⲓⲱⲧ ⲡⲉ. ⲁϥⲛ̅ⲧ, ⲁϥⲛⲟϫⲧ̅ ⲉⲃⲟⲗ, ⲁϥⲃⲱⲕ." ⲡⲉϫⲉ-ⲡϩⲗ̅ⲗⲟ ⲛⲁϥ ϫⲉ, "ⲧⲱⲟⲩⲛⲅ̅ ⲛ̅ⲅⲡⲱⲧ ⲛ̅ⲅⲧⲁϩⲟϥ." ⲁⲩⲱ ⲛ̅ ⲧⲉⲩⲛⲟⲩ ⲁϥⲟⲩϫⲁⲓ, ⲁϥⲧⲱⲟⲩⲛ, ⲁϥⲧⲁϩⲉ-ⲡⲉϥⲉⲓⲱⲧ, ⲁⲩⲱ ⲛ̅ ⲧⲉⲓϩⲉ ⲁⲩⲃⲱⲕ ⲉ ⲡⲉⲩⲏⲓ ⲉⲩⲣⲁϣⲉ.
-</p>
+<main>
+
+    
+    <p id="content">
+      ⲛⲉ-ⲟⲩⲛ̅-ⲟⲩⲁ ϩⲛ̅ ⲕⲏⲙⲉ ⲉ-ⲟⲩⲛ̅ⲧⲁϥ ⲙ̅ⲙⲁⲩ ⲛ̅ ⲟⲩϣⲏⲣⲉ ⲉϥⲥⲏϭ. ⲁⲩⲱ ⲁϥⲉⲓⲛⲉ ⲙ̅ⲙⲟϥ, ⲁϥⲕⲁⲁϥ ϩⲛ̅ ⲧⲣⲓ ⲛ̅ ⲁⲡⲁ ⲙⲁⲕⲁⲣⲓⲟⲥ, ⲁⲩⲱ ⲁϥⲕⲁⲁϥ ⲉϥⲣⲓⲙⲉ ϩⲁϩⲧⲙ̅ ⲡⲣⲟ, ⲁϥⲃⲱⲕ ⲉ ⲡⲟⲩⲉ. ⲡϩⲗ̅ⲗⲟ ⲇⲉ ⲁϥϭⲱϣⲧ̅ ⲉⲃⲟⲗ, ⲁϥⲛⲁⲩ ⲉ ⲡⲕⲟⲩⲓ ⲛ̅ ϣⲏⲣⲉ ⲉϥⲣⲓⲙⲉ, ⲁⲩⲱ ⲡⲉϫⲁϥ ⲛⲁϥ ϫⲉ, "ⲛⲓⲙ ⲡⲉⲛⲧⲁϥⲛ̅ⲧⲕ̅ ⲉ ⲡⲉⲓⲙⲁ?" ⲛ̅ⲧⲟϥ ⲇⲉ ⲡⲉϫⲁϥ ϫⲉ, "ⲡⲁⲉⲓⲱⲧ ⲡⲉ. ⲁϥⲛ̅ⲧ, ⲁϥⲛⲟϫⲧ̅ ⲉⲃⲟⲗ, ⲁϥⲃⲱⲕ." ⲡⲉϫⲉ-ⲡϩⲗ̅ⲗⲟ ⲛⲁϥ ϫⲉ, "ⲧⲱⲟⲩⲛⲅ̅ ⲛ̅ⲅⲡⲱⲧ ⲛ̅ⲅⲧⲁϩⲟϥ." ⲁⲩⲱ ⲛ̅ ⲧⲉⲩⲛⲟⲩ ⲁϥⲟⲩϫⲁⲓ, ⲁϥⲧⲱⲟⲩⲛ, ⲁϥⲧⲁϩⲉ-ⲡⲉϥⲉⲓⲱⲧ, ⲁⲩⲱ ⲛ̅ ⲧⲉⲓϩⲉ ⲁⲩⲃⲱⲕ ⲉ ⲡⲉⲩⲏⲓ ⲉⲩⲣⲁϣⲉ.
+    </p>
+    
+</main>
+
+<footer>
+
+  <h1>annotate-node</h1> 
+  <p><code><a href="annotate-node.js">annotate-node.js</a></code></p>
+</footer>
 
 <script type="module">
 import {annotateNode} from './annotate-node.js'
@@ -66,8 +114,8 @@ let lexicon = await response.json()
 let words = lexicon.entries
 
 
-  const contentNode = document.querySelector('#content');
-  annotateNode(contentNode, lexicon);
+const contentNode = document.querySelector('#content');
+annotateNode(contentNode, lexicon);
 
 </script>
 </body>

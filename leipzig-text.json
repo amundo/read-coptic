@@ -1,0 +1,893 @@
+{
+  "sentences": [
+    {
+      "transcription": "Mereka di Jakarta sekarang.",
+      "translation": "'They are in Jakarta now.'",
+      "words": [
+        {
+          "form": "Mereka",
+          "gloss": "They",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "di",
+          "gloss": "in",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "Jakarta",
+          "gloss": "Jakarta",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "sekarang.",
+          "gloss": "now",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "1",
+        "language": "Indonesian",
+        "source": "Sneddon 1996:237",
+        "tags": [
+          "rule_1"
+        ]
+      }
+    },
+    {
+      "transcription": "Gila abur-u-n ferma hamišaluǧ güǧüna amuq’-da-č.",
+      "translation": "‘Now their farm will not stay behind forever.’",
+      "words": [
+        {
+          "form": "Gila",
+          "gloss": "now",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "abur-u-n",
+          "gloss": "they-OBL-GEN",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "ferma",
+          "gloss": "farm",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "hamišaluǧ",
+          "gloss": "forever",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "güǧüna",
+          "gloss": "behind",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "amuq’-da-č.",
+          "gloss": "stay-FUT-NEG",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "2",
+        "language": "Lezgian",
+        "source": "Haspelmath 1993:207",
+        "tags": [
+          "rule_2"
+        ]
+      }
+    },
+    {
+      "transcription": "palasi=lu niuirtur=lu",
+      "translation": "'both the priest and the shopkeeper'",
+      "words": [
+        {
+          "form": "palasi=lu",
+          "gloss": "priest=and",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "niuirtur=lu",
+          "gloss": "shopkeeper=and",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "3",
+        "language": "West Greenlandic",
+        "source": "Fortescue 1984:127",
+        "tags": [
+          "rule_2"
+        ]
+      }
+    },
+    {
+      "transcription": "a-nii -láay",
+      "translation": "'s/he will laugh'",
+      "words": [
+        {
+          "form": "a-nii -láay",
+          "gloss": "3SG-laugh-FUT",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "4",
+        "language": "Hakha Lai",
+        "source": "",
+        "tags": [
+          "rule_2A"
+        ]
+      }
+    },
+    {
+      "transcription": "My s Marko poexa-l-i avtobus-om v Peredelkino.",
+      "translation": "Marko and I went to Perdelkino by bus.",
+      "words": [
+        {
+          "form": "My",
+          "gloss": "1PL",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "s",
+          "gloss": "COM",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "Marko",
+          "gloss": "Marko",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "poexa-l-i",
+          "gloss": "go-PST-PL",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "avtobus-om",
+          "gloss": "bus-INS",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "v",
+          "gloss": "All",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "Peredelkino.",
+          "gloss": "Peredelkino.",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "5",
+        "language": "Russian",
+        "source": "",
+        "tags": [
+          "rule_3"
+        ]
+      }
+    },
+    {
+      "transcription": "çık-mak",
+      "translation": "'to come out'",
+      "words": [
+        {
+          "form": "çık-mak",
+          "gloss": "come.out-INF",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "6",
+        "language": "Turkish",
+        "source": "",
+        "tags": [
+          "rule_4"
+        ]
+      }
+    },
+    {
+      "transcription": "çık-mak",
+      "translation": "'to come out'",
+      "words": [
+        {
+          "form": "çık-mak",
+          "gloss": "come_out-INF",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "7",
+        "language": "Turkish",
+        "source": "",
+        "tags": [
+          "rule_4a"
+        ]
+      }
+    },
+    {
+      "transcription": "insul-arum",
+      "translation": "'of the islands'",
+      "words": [
+        {
+          "form": "insul-arum",
+          "gloss": "island-GEN.PL",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "8",
+        "language": "Latin",
+        "source": "",
+        "tags": [
+          "rule_4"
+        ]
+      }
+    },
+    {
+      "transcription": "aux chevaux",
+      "translation": "'to the horses'",
+      "words": [
+        {
+          "form": "aux",
+          "gloss": "to.ART.PL",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "chevaux",
+          "gloss": "horse.PL",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "9",
+        "language": "French",
+        "source": "",
+        "tags": [
+          "rule_4"
+        ]
+      }
+    },
+    {
+      "transcription": "unser-n Väter-n",
+      "translation": "'to our fathers'",
+      "words": [
+        {
+          "form": "unser-n",
+          "gloss": "our-DAT.PL",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "Väter-n",
+          "gloss": "father.PL-DAT.PL",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "10",
+        "language": "German",
+        "source": "",
+        "tags": [
+          "rule_4"
+        ]
+      }
+    },
+    {
+      "transcription": "n=an apedani mehuni essandu.",
+      "translation": "'They shall celebrate him on that date.' (CONN = connective)",
+      "words": [
+        {
+          "form": "n=an",
+          "gloss": "CONN=him",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "apedani",
+          "gloss": "that.DAT.SG",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "mehuni",
+          "gloss": "time.DAT.SG",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "essandu.",
+          "gloss": "eat.they.shall",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "11",
+        "language": "Hittite",
+        "source": "Lehmann 1982:211",
+        "tags": [
+          "rule_4"
+        ]
+      }
+    },
+    {
+      "transcription": "nanggayan guny-bi-yarluga?",
+      "translation": "'Who do you two want to spear?'",
+      "words": [
+        {
+          "form": "nanggayan",
+          "gloss": "who",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "guny-bi-yarluga?",
+          "gloss": "2DU.A.3SG.P-FUT-poke",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "12",
+        "language": "Jaminjung",
+        "source": "Schultze-Berndt 2000:92",
+        "tags": [
+          "rule_4"
+        ]
+      }
+    },
+    {
+      "transcription": "çık-mak",
+      "translation": "'to come out'",
+      "words": [
+        {
+          "form": "çık-mak",
+          "gloss": "come_out-INF",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "13",
+        "language": "Turkish",
+        "source": "cf. 6",
+        "tags": [
+          "rule_4A"
+        ]
+      }
+    },
+    {
+      "transcription": "insul-arum",
+      "translation": "'of the islands'",
+      "words": [
+        {
+          "form": "insul-arum",
+          "gloss": "island-GEN;PL",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "14",
+        "language": "Latin",
+        "source": "cf. 7",
+        "tags": [
+          "rule_4B"
+        ]
+      }
+    },
+    {
+      "transcription": "aux chevaux",
+      "translation": "'to the horses'",
+      "words": [
+        {
+          "form": "aux",
+          "gloss": "to;ART;PL",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "chevaux",
+          "gloss": "horse;PL",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "15",
+        "language": "French",
+        "source": "",
+        "tags": [
+          "rule_4B"
+        ]
+      }
+    },
+    {
+      "transcription": "n=an apedani mehuni essandu.",
+      "translation": "'They shall celebrate him on that date.'",
+      "words": [
+        {
+          "form": "n=an",
+          "gloss": "CONN=him",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "apedani",
+          "gloss": "that:DAT;SG",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "mehuni",
+          "gloss": "time:DAT;SG",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "essandu.",
+          "gloss": "eat:they:shall",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "16",
+        "language": "Hittite",
+        "source": "Lehmann 1982:211",
+        "tags": [
+          "rule_4C"
+        ]
+      }
+    },
+    {
+      "transcription": "unser-n Väter-n",
+      "translation": "'to our fathers' (cf. singular Vater)",
+      "words": [
+        {
+          "form": "unser-n",
+          "gloss": "our-DAT.PL",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "Väter-n",
+          "gloss": "father.PL-DAT.PL",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "17",
+        "language": "German",
+        "source": "cf. 9",
+        "tags": [
+          "rule_4D"
+        ]
+      }
+    },
+    {
+      "transcription": "bhris-is",
+      "translation": "'you broke' (cf. nonpast bris-)",
+      "words": [
+        {
+          "form": "bhris-is",
+          "gloss": "PST\\break-2SG",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "18",
+        "language": "Irish",
+        "source": "",
+        "tags": [
+          "rule_4D"
+        ]
+      }
+    },
+    {
+      "transcription": "mú-kòrà",
+      "translation": "'that we work' (cf. indicative mù-kòrà)",
+      "words": [
+        {
+          "form": "mú-kòrà",
+          "gloss": "SBJV\\1PL-work",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "19",
+        "language": "Kinyarwanda",
+        "source": "",
+        "tags": [
+          "rule_4D"
+        ]
+      }
+    },
+    {
+      "transcription": "nanggayan guny-bi-yarluga?",
+      "translation": "'Who do you two want to spear?'",
+      "words": [
+        {
+          "form": "nanggayan",
+          "gloss": "who",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "guny-bi-yarluga?",
+          "gloss": "2DU>3SG-FUT-poke",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "20",
+        "language": "Jaminjung",
+        "source": "Schultze-Berndt 2000:92",
+        "tags": [
+          "rule_4E"
+        ]
+      }
+    },
+    {
+      "transcription": "and-iamo",
+      "translation": "'we go'",
+      "words": [
+        {
+          "form": "and-iamo",
+          "gloss": "go-PRS.1PL (not: go-PRS.1.PL)",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "21",
+        "language": "Italian",
+        "source": "",
+        "tags": [
+          "rule_5"
+        ]
+      }
+    },
+    {
+      "transcription": "ne-e a-khim-chi n-yuNNa",
+      "translation": "DEM-LOC\n\t\t\t    1sPOSS-house-PL\n                3ns-be.NPST",
+      "words": [
+        {
+          "form": "ne-e",
+          "gloss": "DEM-LOC",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "a-khim-chi",
+          "gloss": "that.DAT.SG",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "n-yuNNa",
+          "gloss": "3NSG-be.NPST",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "22",
+        "language": "Belhare",
+        "source": "",
+        "tags": [
+          "rule_5A"
+        ]
+      }
+    },
+    {
+      "transcription": "puer puer-Ø",
+      "translation": "‘boy’ ‘boy’",
+      "words": [
+        {
+          "form": "puer",
+          "gloss": "boy[NOM.SG]",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "or:",
+          "gloss": "boy-NOM.SG",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "puer-Ø",
+          "gloss": "",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "23",
+        "language": "Latin",
+        "source": "",
+        "tags": [
+          "rule_6"
+        ]
+      }
+    },
+    {
+      "transcription": "oz#-di-g xõxe m-uq'e-r",
+      "translation": "'Because of the boy the tree bent.'",
+      "words": [
+        {
+          "form": "oz#-di-g",
+          "gloss": "boy-OBL-AD",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "xõxe",
+          "gloss": "tree(G4)",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "m-uq'e-r",
+          "gloss": "G4-bend-PRET",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "24",
+        "language": "Hunzib",
+        "source": "van den Berg 1995:46",
+        "tags": [
+          "rule_7"
+        ]
+      },
+      "notes": ["(G4 = 4th gender, AD = adessive, PRET = preterite)"]
+    },
+    {
+      "transcription": "na-wíčha-wa-xʔu̧",
+      "translation": "'I hear them' (UND = undergoer, ACT = actor)",
+      "words": [
+        {
+          "form": "na-wíčha-wa-xʔu̧",
+          "gloss": "hear-3PL.UND-1SG.ACT-hear",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "25",
+        "language": "Lakhota",
+        "source": "",
+        "tags": [
+          "rule_8"
+        ]
+      }
+    },
+    {
+      "transcription": "na-wíčha-wa-xʔu̧",
+      "translation": "'I hear them'",
+      "words": [
+        {
+          "form": "na-wíčha-wa-xʔu̧",
+          "gloss": "hear-3PL.UND-1SG.ACT- STEM",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "26",
+        "language": "Lakhota",
+        "source": "",
+        "tags": [
+          "rule_8"
+        ]
+      }
+    },
+    {
+      "transcription": "ge-seh-en or: ge-seh-en",
+      "translation": "'seen'\n                'seen'",
+      "words": [
+        {
+          "form": "ge-seh-en",
+          "gloss": "PTCP-see-PTCP",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "or:",
+          "gloss": "PTCP-see-CIRC",
+          "tags": [],
+          "metadata": {}
+        },
+        {
+          "form": "ge-seh-en",
+          "gloss": "",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "27",
+        "language": "German",
+        "source": "",
+        "tags": [
+          "rule_8"
+        ]
+      }
+    },
+    {
+      "transcription": "b<um>ili (stem: bili)",
+      "translation": "'buy'",
+      "words": [
+        {
+          "form": "b<um>ili (stem: bili)",
+          "gloss": "<ACTFOC>buy",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "28",
+        "language": "Tagalog",
+        "source": "",
+        "tags": [
+          "rule_9"
+        ]
+      }
+    },
+    {
+      "transcription": "reli<n>qu-ere (stem: reliqu-)",
+      "translation": "'to leave'",
+      "words": [
+        {
+          "form": "reli<n>qu-ere (stem: reliqu-)",
+          "gloss": "leave<PRS>-INF",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "29",
+        "language": "Latin",
+        "source": "",
+        "tags": [
+          "rule_9"
+        ]
+      }
+    },
+    {
+      "transcription": "yerak~rak-im",
+      "translation": "'greenish ones' (ATT= attenuative)",
+      "words": [
+        {
+          "form": "yerak~rak-im",
+          "gloss": "green~ATT-M.PL",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "30",
+        "language": "Hebrew",
+        "source": "",
+        "tags": [
+          "rule_10"
+        ]
+      }
+    },
+    {
+      "transcription": "bi~bili",
+      "translation": "'is buying'",
+      "words": [
+        {
+          "form": "bi~bili",
+          "gloss": "IPFV~buy",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "31",
+        "language": "Tagalog",
+        "source": "",
+        "tags": [
+          "rule_10"
+        ]
+      }
+    },
+    {
+      "transcription": "b<um>i~bili",
+      "translation": "'is buying' (ACTFOC = Actor focus)",
+      "words": [
+        {
+          "form": "b<um>i~bili",
+          "gloss": "<ACTFOC>IPFV~buy",
+          "tags": [],
+          "metadata": {}
+        }
+      ],
+      "tags": [],
+      "metadata": {
+        "id": "32",
+        "language": "Tagalog",
+        "source": "",
+        "tags": [
+          "rule_10"
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "language": "Various",
+    "title": "Leipzig Glossing Rules Example Sentences",
+    "url": "https://www.eva.mpg.de/lingua/pdf/Glossing-Rules.pdf"
+  },
+  "tags": []
+}

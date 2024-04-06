@@ -1,0 +1,18 @@
+body {
+  display: grid;
+  grid-template: 
+    "header header" auto
+    "choose  grammar" auto
+    "features grammar" auto
+   / 1fr     1fr;
+  h1 {
+      grid-area: header;
+  }
+}
+choose-wordclass {
+  grid-area: choose;
+  display: block;
+}
+
+#grammar { grid-area: grammar; }
+#features { grid-area: features; }

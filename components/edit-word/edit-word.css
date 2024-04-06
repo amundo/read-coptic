@@ -1,0 +1,21 @@
+
+edit-word {
+  display: inline-grid;
+  font-family: sans-serif;
+  .form {
+    font-size: large;
+    font-weight: bold;
+  }
+  .gloss {
+    font-size: small;
+  }
+  table {
+    font-size: x-small;
+    th {
+      text-align: start;
+      text-transform: uppercase;
+      color: var(--gray, #555);
+    }
+    
+  }
+}

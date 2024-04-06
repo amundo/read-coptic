@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>  
+  <title>configure-category</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="configure-category.css">
+
+</head>
+<body>
+
+    <configure-category id="basic"></configure-category>  
+
+<script type="module">
+import {ConfigureCategory} from './ConfigureCategory.js'
+
+
+let basic = document.querySelector('#basic')
+basic.data = {
+      "name": "gender",
+      "values": [{
+          "value": "masculine",
+          "symbol": "masc"
+        },
+        {
+          "value": "feminine",
+          "symbol": "fem"
+        },
+        {
+          "value": "common",
+          "symbol": "com"
+        }
+      ]
+    }
+    
+
+
+window.ConfigureCategory = document.querySelector('configure-category')
+</script>
+
+</body>
+</html>

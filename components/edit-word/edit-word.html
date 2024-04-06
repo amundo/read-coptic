@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>  
+  <title>edit-word</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="edit-word.css">
+
+</head>
+<body>
+
+    <edit-word id="basic"></edit-word>  
+
+<script type="module">
+import {EditWord} from './EditWord.js'
+
+let request = await fetch('../../coptic-grammar.json')
+let copticGrammar = await request.json()
+
+
+let basic = document.querySelector('#basic')
+basic.grammar = copticGrammar
+
+let word = {
+  form: 'ⲛⲉ'
+}
+
+basic.data = word
+
+window.EditWord = document.querySelector('edit-word')
+</script>
+
+</body>
+</html>

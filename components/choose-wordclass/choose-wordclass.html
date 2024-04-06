@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>choose-wordclass</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="choose-wordclass.css">
+  <link rel="stylesheet" href="https://pathall.net/data-viewer/v2.0.0/data-viewer.css">
+</head>
+
+<body>
+  <h1>choose-wordclass</h1>
+
+  <choose-wordclass id="basic"></choose-wordclass>
+  <data-viewer id="grammar"> </data-viewer>
+  <data-viewer id="features"> </data-viewer>
+
+  <script type="module">
+    import { ChooseWordclass } from './ChooseWordclass.js'
+    import {DataViewer} from 'https://pathall.net/data-viewer/v2.0.0/DataViewer.js'
+    const grammar = {
+      "metadata": {
+        "name": "Sahidic Coptic"
+      },
+      "categories": [
+        {
+          "name": "person",
+          "values": [
+            {
+              "value": "first",
+              "symbol": "1"
+            },
+            {
+              "value": "second",
+              "symbol": "2"
+            },
+            {
+              "value": "third",
+              "symbol": "3"
+            }
+          ]
+        },
+        {
+          "name": "number",
+          "values": [
+            {
+              "value": "singular",
+              "symbol": "SG"
+            },
+            {
+              "value": "plural",
+              "symbol": "PL"
+            }
+          ]
+        },
+        {
+          "name": "gender",
+          "values": [
+            {
+              "value": "masculine",
+              "symbol": "MASC"
+            },
+            {
+              "value": "feminine",
+              "symbol": "FEM"
+            },
+            {
+              "value": "common",
+              "symbol": "COM"
+            }
+          ]
+        },
+        {
+          "name": "definiteness",
+          "values": [
+            {
+              "value": "definite",
+              "symbol": "DEF"
+            },
+            {
+              "value": "indefinite",
+              "symbol": "INDEF"
+            }
+          ]
+        }
+      ],
+      wordclasses: [
+        { name: "pronoun", symbol: "PRON", categories: ["gender", "number", "person"] },
+      { name: "demonstrative", symbol: "DEM", categories: ["gender", "number", "person"] },
+      { name: "noun", symbol: "N", categories: ["gender", "number"] },
+      { name: "verb", symbol: "V", categories: ["number", "person"] }]
+    }
+    basic.data = grammar
+
+    let chooseWordclass = document.querySelector('choose-wordclass')
+    let grammarViewer = document.querySelector('#grammar')
+    let featuresViewer = document.querySelector('#features')
+    grammarViewer.data = grammar
+
+    chooseWordclass.addEventListener('choose-wordclass-change', e => {
+      featuresViewer.data = chooseWordclass.value
+    })
+    
+    window.ChooseWordclass = document.querySelector('choose-wordclass')
+  </script>
+
+</body>
+
+</html>

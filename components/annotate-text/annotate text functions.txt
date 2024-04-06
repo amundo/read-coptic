@@ -1,0 +1,36 @@
+annotate text functions
+
+## html to text 
+annotate existing html
+  * find text nodes
+    * tokenize text of each node
+      * build words array from tokens
+        * replace content of  each text node with array of word-views
+        * use an algo to reassemble a text from those words
+
+## text to html
+* render (existing) text structure
+  * render text
+    * for each sentence
+      * render sentence
+        * render transcription
+        * for each word 
+          * render word-view
+        * render translation  
+
+## gloss words: array to array
+* gloss coptic words with lexicon
+  * render text
+    * for each sentence
+      * render sentence
+        * render transcription
+        * for each word 
+          * render word-view
+        * render translation  
+
+## words array to text object
+* words to text 
+  * punctuation is a word
+    * pass to reduce words to segments
+      * convert segments to text (metadata?)
+

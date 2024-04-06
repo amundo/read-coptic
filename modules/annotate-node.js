@@ -1,33 +1,32 @@
-// ES6 Module: TextAnnotator.js
+// Helper function to recursively find all text nodes under a specific node
+const findTextNodes = (node) => {
+  return Array.from(node.childNodes).reduce((textNodes, child) => {
+    if (child.nodeType === Node.TEXT_NODE) {
+      textNodes.push(child)
+    } else {
+      textNodes = textNodes.concat(findTextNodes(child))
+    }
+    return textNodes
+  }, [])
+}
+
+// Helper function to tokenize text content and wrap tokens in <span> tags
+const tokenizeAndWrap = (text) => {
+  let tokens = text.split(/[\P{Letter}]+/gu)
+  
+  let html = tokens
+  .map((token) => `<span class="word">
+<span class=form>${token}</span>
+<span class=definition></span>
+</span>`)
+  .join(" ")
+
+  return html
+}
+
+
 
 export const annotateNode = (node, lexicon) => {
-  // Helper function to recursively find all text nodes under a specific node
-  const findTextNodes = (node, textNodes = []) => {
-    node.childNodes.forEach((child) => {
-      if (child.nodeType === Node.TEXT_NODE) {
-        textNodes.push(child)
-      } else {
-        findTextNodes(child, textNodes)
-      }
-    })
-    return textNodes
-  }
-
-  // Helper function to tokenize text content and wrap tokens in <span> tags
-  const tokenizeAndWrap = (text) => {
-    let tokens = text.split(/[\P{Letter}]+/gu)
-    
-    let html = tokens
-    .map((token) => `<span class="word">
-  <span class=form>${token}</span>
-  <span class=definition></span>
-</span>`)
-    .join(" ")
-
-    return html
-  }
-
-  // Main logic to annotate text nodes with definitions
   const textNodes = findTextNodes(node)
   textNodes.forEach((textNode) => {
     // Tokenize and wrap each word in a span
