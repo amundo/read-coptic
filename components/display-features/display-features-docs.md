@@ -1,7 +1,7 @@
 ---
 lang: en
-title:  \<paste-parallel\> docs
-css: paste-parallel.css
+title:  \<display-features\> docs
+css: display-features.css
 ---
 
 <main>
@@ -12,11 +12,11 @@ css: paste-parallel.css
 
 
 ```html
-<paste-parallel></paste-parallel>
+<display-features></display-features>
 ```
 
 ```{=html}
-<paste-parallel></paste-parallel>
+<display-features></display-features>
 ```
 
 
@@ -61,8 +61,8 @@ css: paste-parallel.css
 
 
 <script type="module">
-import {PasteParallel} from './PasteParallel.js'
+import {DisplayFeatures} from './DisplayFeatures.js'
 
-window.pasteParallel = document.querySelector('paste-parallel')
+window.displayFeatures = document.querySelector('display-features')
 </script>
 

@@ -1,8 +1,8 @@
-import { assertEquals } from "https://deno.land/std/testing/asserts.ts"
-import { tokenizeCoptic } from "./tokenize-coptic-intl-segmenter.js"
+import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
+import { tokenizeCoptic } from "./tokenize-coptic-intl-segmenter.js";
 
 Deno.test("tokenizeCoptic whitespace", () => {
-  let text = " "
+  let text = " ";
   let expected = [
     {
       plaintext: " ",
@@ -10,12 +10,12 @@ Deno.test("tokenizeCoptic whitespace", () => {
         { token: " ", type: "whitespace" },
       ],
     },
-  ]
-  assertEquals(tokenizeCoptic(text), expected)
-})
+  ];
+  assertEquals(tokenizeCoptic(text), expected);
+});
 
 Deno.test("tokenizeCoptic word whitespace word", () => {
-  let text = "ⲛ̅ ⲁⲡⲁ"
+  let text = "ⲛ̅ ⲁⲡⲁ";
   let expected = [
     {
       plaintext: "ⲛ̅ ⲁⲡⲁ",
@@ -25,6 +25,6 @@ Deno.test("tokenizeCoptic word whitespace word", () => {
         { token: "ⲁⲡⲁ", type: "word" },
       ],
     },
-  ]
-  assertEquals(tokenizeCoptic(text), expected)
-})
+  ];
+  assertEquals(tokenizeCoptic(text), expected);
+});

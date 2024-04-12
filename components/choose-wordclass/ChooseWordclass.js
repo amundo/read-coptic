@@ -29,7 +29,7 @@ class ChooseWordclass extends HTMLElement {
   }
 
   get value() {
-    return Array.from(this.querySelectorAll('configure-category'))
+    return Array.from(this.querySelectorAll('configure-feature'))
       .map(configureWordclass => configureWordclass.value)
       .reduce((features, feature) => {
         console.table(features)
@@ -38,18 +38,18 @@ class ChooseWordclass extends HTMLElement {
       }, {})
   }
 
-  renderConfigureCategories(){
+  renderConfigureFeatures(){
     if(!this.#selectedWordclass) { return }
     let categoryNames = this.#selectedWordclass.categories
     let categories = this.#grammar.categories
-      .filter(category => categoryNames.includes(category.name))
+      .filter(feature => categoryNames.includes(category.name))
 
-    this.querySelector('.configure-categories').innerHTML = ''
+    this.querySelector('.configure-features').innerHTML = ''
+
     categories.forEach(category => {
-      console.log(category)
-      let configureCategory = document.createElement('configure-category')
-      configureCategory.data = category
-      this.querySelector('.configure-categories').append(configureCategory)
+      let configureFeature = document.createElement('configure-feature')
+      configureFeature.data = category
+      this.querySelector('.configure-features').append(configureFeature)
     })
   }
 
@@ -73,8 +73,8 @@ class ChooseWordclass extends HTMLElement {
       let wordclassName = changeEvent.target.value
       this.#selectedWordclass = this.#wordclasses.find(wordclass => wordclass.name === wordclassName)
 
-      this.dispatchEvent(new CustomEvent('choose-wordclass-change', {detail: this.value}))
-      this.renderConfigureCategories()
+      this.dispatchEvent(new Event('change', {bubbles: true}))
+      this.renderConfigureFeatures()
     })
   }
 }

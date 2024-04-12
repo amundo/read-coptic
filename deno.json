@@ -1,0 +1,5 @@
+{
+  "tasks": {
+    "workflow": "pandoc -s -o workflow.html workflow.md"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "tasks": {
+    "build": "pandoc -f markdown -t html --css display-features-docs.css --template=template.html -o display-features-docs.html display-features-docs.md"
+  }
+}
