@@ -10,5 +10,5 @@
     "tab.activeForeground": "#f6f3eb",
     "tab.inactiveBackground": "#f6f3eb"
   },
-  "workbench.activityBar.location": "top"
+  "workbench.activityBar.location": "default"
 }

@@ -1,49 +1,23 @@
-class Features {
-  #features = {}
+class Features extends Map {
+
   constructor(featuresData = {}) {
-    if(Array.isArray(featuresData)){
-      this.#features = Object.fromEntries(featuresData)
-    } else if (typeof featuresData == 'object'){
-      this.#features = featuresData
+    console.log(featuresData)
+    if (typeof featuresData === 'object') {
+      super(Object.entries(featuresData))
+    } else {
+      super(featuresData)
     }
   }
 
-  set(name, value) {
-    if(Array.isArray(name) && name.length == 2){
-      value = name[1]
-      name = name[0]
+  set(key, value) {
+    // If key is an array, destructure it
+    if (Array.isArray(key)) {
+      [key, value] = key;
     }
-    this.#features[name] = value;
-  }
 
-  get(name){
-    return this.#features[name]
+    // Set the key-value pair
+    super.set(key, value);
   }
+} 
 
-  delete(name) {
-    if (this.#features[name]) {
-      delete this.#features[name];
-    }
-  }
-
-  has(name){
-    return this.#features[name] !== undefined
-  }
-
-  forEach(callback) {
-    Object.entries(this.#features).forEach(([key, value]) => {
-      callback(key, value)
-    })
-  }
-
-  map(callback) {
-    return Object.entries(this.#features)
-      .map((key,value) => callback(key,value))
-  }
-
-  toJSON(){
-    return JSON.stringify(this.#features, null, 2)
-  }
-}
-
-export { Features };
+export {Features}

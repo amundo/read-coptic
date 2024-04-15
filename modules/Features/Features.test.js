@@ -64,7 +64,11 @@ Deno.test("Can initialize from feature entries", () => {
 })
 
 Deno.test("Can map features", () => {
-  let featureObject = { gender: "masculine", number: "singular", "case": "nominative"}
+  let featureObject = { gender: "masculine", number: "singular", case: "nominative"}
   let features = new Features(featureObject)
-  assertEquals(features.map(([name,value]) => value), `masculine singular nominative`.split` `)
+
+  const actualValues = Array.from(features.entries()).map(([name, value]) => value)
+  const expectedValues = ["masculine", "singular", "nominative"]
+
+  assertEquals(actualValues, expectedValues)
 })
